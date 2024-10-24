@@ -1,5 +1,8 @@
 # Assignment-2-Phonebook
 Aliza Eaton
-CS 145 
+CS 145 8am
 
 Sources:
+Constructors: https://www.w3schools.com/java/java_constructors.asp
+Instance Variables: https://www.geeksforgeeks.org/variables-in-java/
+Java this keyword: https://www.w3schools.com/java/ref_keyword_this.asp

@@ -1,3 +1,4 @@
+//see read me
 //object class
 //a single list note representing one contact
 public class Contact {
@@ -9,6 +10,10 @@ public class Contact {
     private String city;
 
     //constructor
+    public Contact () {
+        this.firstName = firstName;
+
+    }
 
 
     //getter
