@@ -9,3 +9,4 @@ Java this keyword: https://www.w3schools.com/java/ref_keyword_this.asp
 Getters and Setters: https://www.w3schools.com/java/java_encapsulation.asp 
 
 Figured out I don't need getter and setters if I use constructor?
+As long as you don't need to modify?
