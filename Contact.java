@@ -1,6 +1,6 @@
 //see read me
 //object class
-//a single list note representing one contact
+//a single list note representing one contact in phonebook
 public class Contact {
     //instance variables
     private String firstName;
@@ -9,30 +9,19 @@ public class Contact {
     private String address;
     private String city; //not sure if I want this field
 
-    //contact array
-    String[] = new String[5];
-
     //constructor
-    public Contact () {
+    public Contact (String firstName, String lastName, String phoneNum, String address, String city) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNum = phoneNum;
         this.address = address;
         this.city = city;
     } //end constructor
-
-    //getter: returns elements of contact in an array
-    public String[] getContact() {
-
-    }//end getContact
-
-    //setter
-    public void setContact() { //unclear with difference between setter and constuctor
-
-    }//end setContact
-
+ 
     //put contact into presentable form
     public String toString() {
-
-    }
+        String contactString = firstName + " " + lastName + "\n"
+        + phoneNum + "\n" + address + "\n" + city + "\n";
+        return contactString;
+    }//end toString
 }
