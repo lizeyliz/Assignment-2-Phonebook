@@ -1,5 +1,6 @@
 //object class
-public class aeListNode {
+//a single list note representing one contact
+public class Contact {
     //instance variables
     private String firstName;
     private String lastName;
@@ -8,6 +9,7 @@ public class aeListNode {
     private String city;
 
     //constructor
+
 
     //getter
 
