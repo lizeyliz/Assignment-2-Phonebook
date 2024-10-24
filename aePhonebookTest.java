@@ -21,8 +21,17 @@ public class aePhonebookTest {
         p1.city = scan.next();
 
         //print p1
+        System.out.println();
         System.out.println(p1.toString());
 
     }//end main
+
+    //user menu
+    public void userMenu(){
+        System.out.println("Welcome to the phonebook!");
+        System.out.println("Please input a number 1-4:");
+        System.out.println("1) Create a new contact");
+        System.out.println("2) View phonebook");
+    }
     
 }//end aePhonebookTest
