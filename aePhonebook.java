@@ -17,9 +17,12 @@ public class aePhonebook {
             return myContact;
         }//end createContact
 
+        public void viewPhonebook() {
+
+        } //end viewPhonebook
+
         //user menu
         public void userMenu(int userInt) {
-
             switch (userInt) {
                 case 1 -> { //create a contact
                     System.out.println("Create a contact");
