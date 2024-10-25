@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class aePhonebookTest {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Contact p1 = new Contact();
-        Contact p2 = new Contact();
+        Contact p1 = new Contact("Harry Potter", "206-682-7855", "12 Grimmauld Place", "London");
+        Contact p2 = new Contact("John Doe", "206-574-6779", "1479 Harris Ave", "Bellingham");
         System.out.println(p2.toString());
 
         //Create contact from user input (for p1)
