@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class aePhonebook {
         //Create contact from user input
         public Contact createContact(Scanner scan, Contact myContact) {
+            scan.nextLine();//consumes dangling newline char
             System.out.println("Enter name:");
             myContact.name = scan.nextLine();
             System.out.println("Enter phone number (XXX-XXX-XXXX):");
