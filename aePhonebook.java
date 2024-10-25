@@ -8,14 +8,14 @@ public class aePhonebook {
         public Contact createContact(Scanner scan, Contact myContact) {
             scan.nextLine();//consumes dangling newline char
             System.out.println("Enter name:");
-            myContact.name = scan.nextLine();
+            myContact.setName(scan.nextLine());
             System.out.println("Enter phone number (XXX-XXX-XXXX):");
-            myContact.phoneNum = scan.next();
+            myContact.setPhoneNum(scan.next());
             scan.nextLine();//consumes dangling newline char
             System.out.println("Enter address:");
-            myContact.address = scan.nextLine();
+            myContact.setAddress(scan.nextLine());
             System.out.println("Enter city:");
-            myContact.city = scan.next();
+            myContact.setCity(scan.next());
     
             return myContact;
         }//end createContact
