@@ -1,8 +1,7 @@
 //see read me
 //object class
 //a single list note representing one contact in phonebook
-//currently not making data private (couldn't figure out) will come back to
-//getter and setter for each variable (only give access to what you need for security)
+
 public class Contact {
    //instance variables
    private String name;
@@ -12,6 +11,8 @@ public class Contact {
 
    //pointing to next node
    Contact next; //not sure what this does, apparently used to stop entries,
+   //first, last Contact variables?
+   //int for size?
 
    //getters and setters
 
@@ -60,4 +61,4 @@ public class Contact {
         String contactString = name + "\n" + phoneNum + "\n" + address + "\n" + city + "\n";
         return contactString;
     }//end toString
-}
+}//end class Contact
