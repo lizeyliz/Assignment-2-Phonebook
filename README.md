@@ -14,3 +14,5 @@ Chapter 16 Slides Deitel/Deitel LinkedLists (add link)
 
 Figured out I don't need getter and setters if I use constructor?
 As long as you don't need to modify?
+
+Make LinkedList without imports

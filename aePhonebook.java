@@ -1,5 +1,7 @@
 //see readme
 //manager class: contains methods
+//start with add, delete, and display (modify is harder)
+//add at end and add at index method?
 import java.util.Scanner;
 public class aePhonebook {
         //Create contact from user input
