@@ -17,6 +17,11 @@ public class aePhonebook {
             return myContact;
         }//end createContact
 
+        /*public void addContact(Contact contact) {
+            if (front == null)
+        }*/
+
+        //print contacts
         public void viewPhonebook() {
 
         } //end viewPhonebook

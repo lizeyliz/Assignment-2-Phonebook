@@ -9,6 +9,8 @@ public class Contact {
    String address;
    String city; //not sure if I want this field
 
+   //Contact next; //not sure what this does, apparently used to stop entries
+
     //constructor
     public Contact (String name, String phoneNum, String address, String city) {
         this.name = name;

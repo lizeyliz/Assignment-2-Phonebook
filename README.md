@@ -1,12 +1,16 @@
 # Assignment-2-Phonebook
+
 Aliza Eaton
 CS 145 8am
 
 Sources:
-Constructors: https://www.w3schools.com/java/java_constructors.asp
-Instance Variables: https://www.geeksforgeeks.org/variables-in-java/
-Java this keyword: https://www.w3schools.com/java/ref_keyword_this.asp
-Getters and Setters: https://www.w3schools.com/java/java_encapsulation.asp 
+Constructors: <https://www.w3schools.com/java/java_constructors.asp>
+Instance Variables: <https://www.geeksforgeeks.org/variables-in-java/>
+Java this keyword: <https://www.w3schools.com/java/ref_keyword_this.asp>
+Getters and Setters: <https://www.w3schools.com/java/java_encapsulation.asp>
+Chapter 16 Slides Deitel/Deitel LinkedLists (add link)
+<https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/>
+<https://www.javatpoint.com/java-list-node>
 
 Figured out I don't need getter and setters if I use constructor?
 As long as you don't need to modify?
