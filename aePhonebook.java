@@ -1,9 +1,16 @@
 //see readme
-//manager class: contains methods
+//manager class: contains methods (LinkedList)
 //start with add, delete, and display (modify is harder)
 //add at end and add at index method?
 import java.util.Scanner;
 public class aePhonebook {
+        Contact head; //points to first element?
+
+        //constructor
+        public aePhonebook() {
+            this.head = null; //initializes head to null so we can add
+        }//end constructor
+
         //Create contact from user input
         public Contact createContact(Scanner scan, Contact myContact) {
             scan.nextLine();//consumes dangling newline char
@@ -20,12 +27,30 @@ public class aePhonebook {
             return myContact;
         }//end createContact
 
-        /*public void addContact(Contact contact) {
-            if (front == null)
-        }*/
+        //import contact from createContact (myContact)
+        public void addContact(Contact contact) {
+            Contact newContact = contact;
+            if (head == null) {
+                head = newContact;
+            } else {
+                Contact current = head;
+                while(current.next != null) {
+                    current = current.next;
+                }//end while loop
+                current.next = newContact;
+            }//end if/else
+        }
 
         //print contacts
         public void viewPhonebook() {
+            Contact current = head;
+            while (current != null) {
+                //from google ai
+                //System.out.print(current.data + " ");
+                //current = current.next;
+                System.out.println(); //print contact (don't have code in there rn)
+            }//end while loop
+            System.out.println();
 
         } //end viewPhonebook
 

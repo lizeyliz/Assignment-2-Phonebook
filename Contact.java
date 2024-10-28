@@ -7,7 +7,7 @@ public class Contact {
    private String name;
    private String phoneNum;
    private String address;
-   private String city; //not sure if I want this field
+   private String city;
 
    //pointing to next node
    Contact next; //not sure what this does, apparently used to stop entries,
@@ -15,7 +15,6 @@ public class Contact {
    //int for size?
 
    //getters and setters
-
    public String getName() {
         return name;
    }//end getName
@@ -54,6 +53,8 @@ public class Contact {
         this.phoneNum = phoneNum;
         this.address = address;
         this.city = city;
+
+        this.next = null;//so we can add to end
     } //end constructor
 
     //put contact into presentable form
