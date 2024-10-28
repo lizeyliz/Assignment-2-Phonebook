@@ -14,9 +14,6 @@ Chapter 16 Slides Deitel/Deitel LinkedLists (add link)
 
 Google AI search "how to create linked list class java"
 
-Figured out I don't need getter and setters if I use constructor?
-As long as you don't need to modify?
-
 Make LinkedList without imports
 
 go through all code and make sure you understand what it's doing

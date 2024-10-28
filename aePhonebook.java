@@ -28,7 +28,7 @@ public class aePhonebook {
         }//end createContact
 
         //import contact from createContact (myContact)
-        public void addContact(Contact contact) {
+        /*public void addContact(Contact contact) {
             Contact newContact = contact;
             if (head == null) {
                 head = newContact;
@@ -39,10 +39,10 @@ public class aePhonebook {
                 }//end while loop
                 current.next = newContact;
             }//end if/else
-        }
+        }*/
 
         //print contacts
-        public void viewPhonebook() {
+        /*public void viewPhonebook() {
             Contact current = head;
             while (current != null) {
                 //from google ai
@@ -52,7 +52,7 @@ public class aePhonebook {
             }//end while loop
             System.out.println();
 
-        } //end viewPhonebook
+        } //end viewPhonebook*/
 
         //user menu
         public void userMenu(int userInt) {
