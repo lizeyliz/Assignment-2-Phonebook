@@ -17,3 +17,5 @@ Google AI search "how to create linked list class java"
 Make LinkedList without imports
 
 go through all code and make sure you understand what it's doing
+
+experimenting with linked lists in different folder so i can figure them out
