@@ -49,15 +49,12 @@ public class aePhonebook {
             size++;
         }//end addContact
 
-        //get contact
-        /*public Contact get(int index) {
-
-        }*/
-
         //modify a contact
-        public void modify(Contact contact) {
-            Contact current = head; //put outside of method bc used in all methods?
-            //but needs to reset every time
+        public void modify(int index) {
+            Contact current = head;
+            //go through linked list to index
+
+            //modify at index
 
         }//end modify
 
