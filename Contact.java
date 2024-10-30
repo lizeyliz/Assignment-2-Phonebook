@@ -10,7 +10,7 @@ public class Contact {
    private String city;
 
    //pointing to next node
-   Contact next; //not sure what this does, apparently used to stop entries,
+   Contact next; //points to next node (or null)
    //first, last Contact variables?
    //int for size?
     //constructor
@@ -21,7 +21,7 @@ public class Contact {
      this.city = city;
 
      this.next = null;//so we can add to end
-     
+
  } //end constructor
    //getters and setters
    public String getName() {

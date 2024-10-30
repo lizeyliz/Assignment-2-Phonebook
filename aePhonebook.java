@@ -44,6 +44,18 @@ public class aePhonebook {
             }//end if/else
         }//end addContact
 
+        //modify a contact
+        public void modify(Contact contact) {
+            Contact current = head; //put outside of method bc used in all methods?
+            //but needs to reset every time
+
+        }//end modify
+
+        //delete a contact
+        public void delete(Contact contact) {
+
+        }//end delete
+
         //print contacts
         public void viewPhonebook() {
             Contact current = head; //start from beginning of linked list
@@ -53,7 +65,7 @@ public class aePhonebook {
             }//end while loop
             System.out.println();
 
-        } //end viewPhonebook*/
+        } //end viewPhonebook
 
         //user menu
         public void userMenu(int userInt) {
