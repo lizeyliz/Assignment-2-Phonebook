@@ -2,7 +2,7 @@
 //manager class: contains methods (LinkedList)
 //start with add, delete, and display (modify is harder)
 //add at end and add at index method?
-import java.util.Scanner;
+import java.util.*;
 public class aePhonebook {
         Contact head; //points to first element?
         int size = 0;
@@ -49,14 +49,6 @@ public class aePhonebook {
             size++;
         }//end addContact
 
-        /*public int size() {
-            int size = 1;
-            for (Contact current = head; current.next != null; current = current.next) {
-                size++;
-            }//end for loop
-            return size;
-        }//end size*/
-
         //get contact
         /*public Contact get(int index) {
 
@@ -70,9 +62,20 @@ public class aePhonebook {
         }//end modify
 
         //delete a contact
-        public void delete(Contact contact) {
-            //size--;
-
+        //from slide 50 linked list
+        public void delete(int index) {
+            if (index == 0) {//special case, removing first element
+                head = head.next; //next element is new head
+            } else {
+                Contact current = head;
+                //go through array list up to index?
+                for (int i = 0; i < index - 1; i++) {
+                    current = current.next;
+                }//end for loop
+                //breaking link and connecting it to node after the one we're deleting
+                current.next = current.next.next;
+            }//end if/else
+            size--;
         }//end delete
 
         //print contacts

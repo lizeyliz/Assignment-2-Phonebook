@@ -18,10 +18,7 @@ public class aePhonebookTest {
         "London");
         Contact p2 = new Contact("John Doe", "206-574-6779", "1479 Harris Ave", 
         "Bellingham");
-
-        //create a contact from user input
-        Contact p3 = new Contact(null, null, null, null);
-        myPhoneBook.createContact(scan, p3);
+        Contact p3 = new Contact("Jane Santiago", "206-555-7464", "1900 Maple St", "Seattle");
 
         //test add contact method
         myPhoneBook.addContact(p1);
@@ -31,6 +28,11 @@ public class aePhonebookTest {
         myPhoneBook.viewPhonebook();
 
         //test size method
+        System.out.println("Number of contacts = " + myPhoneBook.size);
+
+        //test delete method (delete p2)
+        myPhoneBook.delete(0);
+        myPhoneBook.viewPhonebook();
         System.out.println("Number of contacts = " + myPhoneBook.size);
 
 
