@@ -11,6 +11,7 @@ Getters and Setters: <https://www.w3schools.com/java/java_encapsulation.asp>
 Chapter 16 Slides Deitel/Deitel LinkedLists (add link)
 <https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/>
 <https://www.javatpoint.com/java-list-node>
+<https://stackoverflow.com/questions/12617021/measure-size-length-of-singly-linked-list-in-java>
 
 Google AI search "how to create linked list class java"
 

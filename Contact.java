@@ -11,8 +11,7 @@ public class Contact {
 
    //pointing to next node
    Contact next; //points to next node (or null)
-   //first, last Contact variables?
-   //int for size?
+   
     //constructor
     public Contact (String name, String phoneNum, String address, String city) {
      this.name = name;

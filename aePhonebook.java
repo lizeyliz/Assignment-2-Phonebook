@@ -5,6 +5,9 @@
 import java.util.Scanner;
 public class aePhonebook {
         Contact head; //points to first element?
+        int size = 0;
+
+        //first and last?
 
         //constructor
         public aePhonebook() {
@@ -13,6 +16,7 @@ public class aePhonebook {
 
         //Create contact from user input
         public Contact createContact(Scanner scan, Contact myContact) {
+            System.out.println("add contact (press enter)");//may remove later
             scan.nextLine();//consumes dangling newline char
             System.out.println("Enter name:");
             myContact.setName(scan.nextLine());
@@ -42,7 +46,21 @@ public class aePhonebook {
                 }//end while loop
                 current.next = newContact; //add new contact to end of list
             }//end if/else
+            size++;
         }//end addContact
+
+        /*public int size() {
+            int size = 1;
+            for (Contact current = head; current.next != null; current = current.next) {
+                size++;
+            }//end for loop
+            return size;
+        }//end size*/
+
+        //get contact
+        /*public Contact get(int index) {
+
+        }*/
 
         //modify a contact
         public void modify(Contact contact) {
@@ -53,6 +71,7 @@ public class aePhonebook {
 
         //delete a contact
         public void delete(Contact contact) {
+            //size--;
 
         }//end delete
 
