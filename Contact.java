@@ -13,7 +13,16 @@ public class Contact {
    Contact next; //not sure what this does, apparently used to stop entries,
    //first, last Contact variables?
    //int for size?
+    //constructor
+    public Contact (String name, String phoneNum, String address, String city) {
+     this.name = name;
+     this.phoneNum = phoneNum;
+     this.address = address;
+     this.city = city;
 
+     this.next = null;//so we can add to end
+     
+ } //end constructor
    //getters and setters
    public String getName() {
         return name;
@@ -46,16 +55,6 @@ public class Contact {
    public void setCity(String newCity) {
         this.city = newCity;
    }//end setCity
-
-    //constructor
-    public Contact (String name, String phoneNum, String address, String city) {
-        this.name = name;
-        this.phoneNum = phoneNum;
-        this.address = address;
-        this.city = city;
-
-        this.next = null;//so we can add to end
-    } //end constructor
 
     //put contact into presentable form
     public String toString() {
