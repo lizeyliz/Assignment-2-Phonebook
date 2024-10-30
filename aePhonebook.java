@@ -28,18 +28,19 @@ public class aePhonebook {
         }//end createContact
 
         //import contact from createContact (myContact)
-        /*public void addContact(Contact contact) {
+        //add contact to end of list
+        public void addContact(Contact contact) {
             Contact newContact = contact;
-            if (head == null) {
-                head = newContact;
-            } else {
-                Contact current = head;
-                while(current.next != null) {
-                    current = current.next;
+            if (head == null) { //if head is empty, add contact
+                head = newContact; 
+            } else { //if head isn't empty
+                Contact current = head; //starting from beginning of linked list
+                while(current.next != null) { //while current isn't pointing to null
+                    current = current.next; //move to next contact in linked list
                 }//end while loop
-                current.next = newContact;
+                current.next = newContact; //add new contact to end of list
             }//end if/else
-        }*/
+        }//end addContact
 
         //print contacts
         /*public void viewPhonebook() {
