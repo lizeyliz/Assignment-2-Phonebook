@@ -18,14 +18,23 @@ public class aePhonebookTest {
         "London");
         Contact p2 = new Contact("John Doe", "206-574-6779", "1479 Harris Ave", 
         "Bellingham");
-        System.out.println(p1.toString());
-        System.out.println(p2.toString());
+        /*System.out.println(p1.toString());
+        System.out.println(p2.toString());*/
 
         //test: print a contact from user input
         Contact p3 = new Contact(null, null, null, null);
         myPhoneBook.createContact(scan, p3);
         System.out.println();
         System.out.println(p3.toString());
+
+        //test add contact method
+        myPhoneBook.addContact(p1);
+        myPhoneBook.addContact(p2);
+        myPhoneBook.addContact(p3);
+
+        myPhoneBook.viewPhonebook();
+
+
     }//end main
     
 }//end aePhonebookTest

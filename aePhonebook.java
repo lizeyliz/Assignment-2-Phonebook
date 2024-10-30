@@ -43,13 +43,11 @@ public class aePhonebook {
         }//end addContact
 
         //print contacts
-        /*public void viewPhonebook() {
-            Contact current = head;
+        public void viewPhonebook() {
+            Contact current = head; //start from beginning of linked list
             while (current != null) {
-                //from google ai
-                //System.out.print(current.data + " ");
-                //current = current.next;
-                System.out.println(); //print contact (don't have code in there rn)
+                System.out.println(current.toString());
+                current = current.next; //move to next in list
             }//end while loop
             System.out.println();
 
