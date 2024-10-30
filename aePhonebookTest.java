@@ -24,8 +24,6 @@ public class aePhonebookTest {
         //test: print a contact from user input
         Contact p3 = new Contact(null, null, null, null);
         myPhoneBook.createContact(scan, p3);
-        System.out.println();
-        System.out.println(p3.toString());
 
         //test add contact method
         myPhoneBook.addContact(p1);

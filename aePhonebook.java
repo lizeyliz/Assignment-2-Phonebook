@@ -23,6 +23,8 @@ public class aePhonebook {
             myContact.setAddress(scan.nextLine());
             System.out.println("Enter city:");
             myContact.setCity(scan.next());
+
+            System.out.println();
     
             return myContact;
         }//end createContact
