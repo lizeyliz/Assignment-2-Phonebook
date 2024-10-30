@@ -68,11 +68,12 @@ public class aePhonebook {
                 head = head.next; //next element is new head
             } else {
                 Contact current = head;
-                //go through array list up to index?
+                //go through array list up to element 2 before index
                 for (int i = 0; i < index - 1; i++) {
                     current = current.next;
                 }//end for loop
-                //breaking link and connecting it to node after the one we're deleting
+                //taking element before the one we want to delete, 
+                //connecting it to element after the one we want to delete
                 current.next = current.next.next;
             }//end if/else
             size--;
@@ -86,7 +87,6 @@ public class aePhonebook {
                 current = current.next; //move to next in list
             }//end while loop
             System.out.println();
-
         } //end viewPhonebook
 
         //user menu
