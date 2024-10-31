@@ -28,6 +28,12 @@ public class aePhonebookTest {
         myPhoneBook.addContact(p4);
 
         myPhoneBook.viewPhonebook();
+
+        //test modify method
+        //modify at index 0
+        System.out.println("Modify at index 1:");
+        myPhoneBook.modify(1);
+        myPhoneBook.viewPhonebook();
     }//end main
     
 }//end aePhonebookTest

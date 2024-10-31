@@ -11,6 +11,7 @@ public class Contact {
 
    //pointing to next node
    Contact next; //points to next node (or null)
+   Contact prev; //points to previous node
    
     //constructor
     public Contact (String name, String phoneNum, String address, String city) {
@@ -20,6 +21,7 @@ public class Contact {
      this.city = city;
 
      this.next = null;//so we can add to end
+     this.prev = null; 
 
  } //end constructor
    //getters and setters
