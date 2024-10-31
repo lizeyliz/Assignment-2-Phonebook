@@ -28,10 +28,6 @@ public class aePhonebookTest {
         myPhoneBook.addContact(p4);
 
         myPhoneBook.viewPhonebook();
-
-        myPhoneBook.modify(1);
-        System.out.println("Modified phonebook");
-        myPhoneBook.viewPhonebook();
     }//end main
     
 }//end aePhonebookTest
