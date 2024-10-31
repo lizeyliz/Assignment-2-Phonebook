@@ -19,23 +19,19 @@ public class aePhonebookTest {
         Contact p2 = new Contact("John Doe", "206-574-6779", "1479 Harris Ave", 
         "Bellingham");
         Contact p3 = new Contact("Jane Santiago", "206-555-7464", "1900 Maple St", "Seattle");
+        Contact p4 = new Contact("Harold Green", "206-767-8321", "1320 Oak St", "Bellingham");
 
         //test add contact method
         myPhoneBook.addContact(p1);
         myPhoneBook.addContact(p2);
         myPhoneBook.addContact(p3);
+        myPhoneBook.addContact(p4);
 
         myPhoneBook.viewPhonebook();
 
-        //test size method
-        System.out.println("Number of contacts = " + myPhoneBook.size);
-
-        //test delete method (delete p2)
-        myPhoneBook.delete(0);
+        myPhoneBook.modify(1);
+        System.out.println("Modified phonebook");
         myPhoneBook.viewPhonebook();
-        System.out.println("Number of contacts = " + myPhoneBook.size);
-
-
     }//end main
     
 }//end aePhonebookTest

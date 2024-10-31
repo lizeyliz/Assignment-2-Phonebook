@@ -49,12 +49,22 @@ public class aePhonebook {
             size++;
         }//end addContact
 
-        //modify a contact
+        //modify a contact (add scanner)
+        //need to modify the next reference of node BEFORE the place you want to change
         public void modify(int index) {
+            //List contacts with index #s by them
+            //System.out.println("Which contact would you like to modify?"); in user menu
             Contact current = head;
-            //go through linked list to index
+            //go through linked list to spot two before index
+            for (int i = 0; i < index - 1; i++) {
+                current = current.next;
+            } //end for loop
+            //changing the next reference for contact BEFORE one you want to change
+            current.next = new Contact("Modify","206-546-8900", "2650 Nowhere St", "Bellingham");
 
-            //modify at index
+            //now need to connect back to rest of list, currently cuts off at spot modified
+            //doubly vs singly linked list
+
 
         }//end modify
 
