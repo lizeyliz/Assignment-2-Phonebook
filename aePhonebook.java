@@ -4,6 +4,8 @@ import java.util.*;
 public class aePhonebook {
         Contact head; //will point to first contact
         int size = 0;
+        //initialize scanner
+        Scanner scan = new Scanner(System.in);
 
         //constructor
         public aePhonebook() {
@@ -11,7 +13,8 @@ public class aePhonebook {
         }//end constructor
 
         //Create contact from user input
-        public Contact createContact(Scanner scan, Contact myContact) {
+        public Contact createContact(Scanner scan) {
+            Contact myContact = new Contact(null, null, null, null);
             System.out.println("add contact (press enter)");//may remove later
             scan.nextLine();//consumes dangling newline char
             System.out.println("Enter name:");
@@ -104,7 +107,8 @@ public class aePhonebook {
         public void userMenu(int userInt) {
             switch (userInt) {
                 case 1 -> { //create a contact
-                    System.out.println("Create a contact");
+                    Contact newContact = createContact(scan);
+                    addContact(newContact);
                 } case 2 -> { //view phonebook
                     viewPhonebook();
                 } case 3 -> { //modify a contact
