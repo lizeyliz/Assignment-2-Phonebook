@@ -65,11 +65,8 @@ public class aePhonebook {
             size++;
         }//end addAtIndex
 
-        //modify a contact (add scanner)
-        //need to modify the next reference of node BEFORE the place you want to change
-        //delete element and add back in new element at index?
-        public void modify(int index) {
-            Contact newContact = new Contact("Modify","206-546-8900", "2650 Nowhere St", "Bellingham");
+        //modify a contact (need to add user input
+        public void modify(int index, Contact newContact) {
             //delete contact at index and add new contact from user input at same index
             delete(index);
             addAtIndex(index, newContact);
@@ -109,7 +106,7 @@ public class aePhonebook {
                 case 1 -> { //create a contact
                     System.out.println("Create a contact");
                 } case 2 -> { //view phonebook
-                    System.out.println("View phonebook");
+                    viewPhonebook();
                 } case 3 -> { //modify a contact
                     System.out.println("Modify a contact");
                     //List contacts with index #s by them
