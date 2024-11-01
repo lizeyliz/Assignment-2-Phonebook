@@ -29,11 +29,15 @@ public class aePhonebookTest {
 
         myPhoneBook.viewPhonebook();
 
-        //test modify method
-        //modify at index 0
-        System.out.println("Modify at index 1:");
-        myPhoneBook.modify(1);
+        //test add at beginning
+        Contact newContact = new Contact("Front", "00000", "1800 Where St", "Seattle");
+        myPhoneBook.addAtIndex(0, newContact);
+        System.out.println("Add at front");
+        Contact index3 = new Contact("Index3", null, null, null);
+        System.out.println("Add at index 3");
+        myPhoneBook.addAtIndex(3, index3);
         myPhoneBook.viewPhonebook();
+
     }//end main
     
 }//end aePhonebookTest

@@ -51,6 +51,24 @@ public class aePhonebook {
             size++;
         }//end addContact
 
+        //add contact at index
+        public void addAtIndex(int index, Contact newContact) {
+            //add at beginning
+            if (index == 0) {
+                newContact.next = head;
+                head = newContact;
+            } else {
+                //start from beginning of linked list
+                Contact current = head;
+                //move through linked list up to two before index
+                for (int i = 0; i < index - 1; i++) {
+                    current = current.next;
+                }//end for loop
+                newContact.next = current.next;
+                current.next = newContact;
+            }//end if/else
+        }//end addAtIndex
+
         //modify a contact (add scanner)
         //need to modify the next reference of node BEFORE the place you want to change
         //delete element and add back in new element at index?
@@ -70,6 +88,7 @@ public class aePhonebook {
                 current = current.next;
             } //end for loop
             //changing the next reference for contact BEFORE one you want to change
+            newContact = current.next; //link new contact to rest of list after
             current.next = newContact;
             //get contact after
             //newContact.next = get(index + 1);

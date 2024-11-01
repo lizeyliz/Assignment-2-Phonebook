@@ -13,6 +13,7 @@ Chapter 16 Slides Deitel/Deitel LinkedLists (add link)
 <https://www.javatpoint.com/java-list-node>
 <https://stackoverflow.com/questions/12617021/measure-size-length-of-singly-linked-list-in-java>
 <https://www.geeksforgeeks.org/introduction-to-doubly-linked-lists-in-java/>
+Google AI search: "how to add at index singly linked list java"
 
 Google AI search "how to create linked list class java"
 
