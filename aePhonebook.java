@@ -103,6 +103,16 @@ public class aePhonebook {
             System.out.println();
         } //end viewPhonebook
 
+        //view phonebook with index numbers
+        public void viewWithIndices() {
+            Contact current = head;
+            for (int i = 0; i < size; i++) {
+                System.out.println(i + ") " + current.toString());
+                current = current.next;
+            }//end for loop
+            System.out.println();
+        }//end viewWithIndices
+
         //user menu
         public void userMenu(int userInt) {
             switch (userInt) {
@@ -112,9 +122,7 @@ public class aePhonebook {
                 } case 2 -> { //view phonebook
                     viewPhonebook();
                 } case 3 -> { //modify a contact
-                    System.out.println("Modify a contact");
-                    //List contacts with index #s by them
-                    //System.out.println("Which contact would you like to modify?");
+                    //view contacts with index number
                 } case 4 -> {//delete a contact
                     System.out.println("Delete a contact");
                 } case 5 -> {//quit
