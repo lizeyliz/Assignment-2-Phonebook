@@ -5,7 +5,6 @@ public class aePhonebook {
         Contact head; //will point to first contact
         int size = 0;
         //initialize scanner
-        Scanner scan = new Scanner(System.in);
 
         //constructor
         public aePhonebook() {
@@ -114,7 +113,7 @@ public class aePhonebook {
         }//end viewWithIndices
 
         //user menu
-        public void userMenu(int userInt) {
+        public void userMenu(int userInt, Scanner scan) {
             switch (userInt) {
                 case 1 -> { //create a contact
                     Contact newContact = createContact(scan);
@@ -124,7 +123,11 @@ public class aePhonebook {
                 } case 3 -> { //modify a contact
                     //view contacts with index number
                 } case 4 -> {//delete a contact
-                    System.out.println("Delete a contact");
+                    viewWithIndices();
+                    System.out.println("Enter number of contact you would like to delete (integer from list above):");
+                    int deleteIndex = scan.nextInt();
+                    delete(deleteIndex);
+                    System.out.println("Deleted!");
                 } case 5 -> {//quit
                     //nothing happens here
                 } default -> { //initialized to this and will show if wrong input is typed
@@ -140,3 +143,7 @@ public class aePhonebook {
             System.out.println("5) Quit");
         }//end userMenu
 }//end aePhonebook
+
+//To do:
+//add cases for incorrect user input (try/catch?)
+//sort list (extra credit)

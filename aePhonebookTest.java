@@ -20,7 +20,7 @@ public class aePhonebookTest {
         //user menu
         int userInt = 0; //initialize to invalid input to give instructions
         do {  //loop user menu
-            myPhoneBook.userMenu(userInt);
+            myPhoneBook.userMenu(userInt, scan);
             //get user input
             userInt = scan.nextInt();
         } while (userInt != 5);
