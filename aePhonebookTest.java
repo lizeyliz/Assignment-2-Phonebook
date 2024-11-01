@@ -1,18 +1,14 @@
 import java.util.Scanner;
 public class aePhonebookTest {
     public static void main(String[] args) {
-        //create a phonebook object
-        aePhonebook myPhoneBook = new aePhonebook();
-        Scanner scan = new Scanner(System.in);
+        aePhonebook myPhoneBook = new aePhonebook(); //create a phonebook object
+        Scanner scan = new Scanner(System.in); //adding user input capabilities
 
-        //adding four contacts to phonebook
-        Contact p1 = new Contact("Harry Potter", "206-682-7855", "12 Grimmauld Place",
-        "London");
+        //adding three contacts to phonebook
         Contact p2 = new Contact("John Doe", "206-574-6779", "1479 Harris Ave", 
         "Bellingham");
         Contact p3 = new Contact("Jane Santiago", "206-555-7464", "1900 Maple St", "Seattle");
         Contact p4 = new Contact("Harold Green", "206-767-8321", "1320 Oak St", "Bellingham");
-        myPhoneBook.addContact(p1);
         myPhoneBook.addContact(p2);
         myPhoneBook.addContact(p3);
         myPhoneBook.addContact(p4);
@@ -26,5 +22,4 @@ public class aePhonebookTest {
         } while (userInt != 5);
         System.out.println("Goodbye!");
     }//end main
-    
 }//end aePhonebookTest

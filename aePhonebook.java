@@ -30,7 +30,6 @@ public class aePhonebook {
             return myContact;
         }//end createContact
 
-        //import contact from createContact (myContact)
         //add contact to end of list
         public void addContact(Contact contact) {
             Contact newContact = contact;
