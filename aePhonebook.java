@@ -1,19 +1,13 @@
 //see readme
 //manager class: contains methods (LinkedList)
-//start with add, delete, and display (modify is harder)
-//add at end and add at index method?
 import java.util.*;
 public class aePhonebook {
         Contact head; //will point to first contact
-        Contact tail; //will point to last contact
         int size = 0;
-
-        //first and last?
 
         //constructor
         public aePhonebook() {
             this.head = null; //initializes head to null so we can add
-            this.tail = null;
         }//end constructor
 
         //Create contact from user input
@@ -64,40 +58,21 @@ public class aePhonebook {
                 for (int i = 0; i < index - 1; i++) {
                     current = current.next;
                 }//end for loop
-                newContact.next = current.next;
-                current.next = newContact;
+                newContact.next = current.next; //makes the next reference for new contact the reference for current contact 
+                //(so list doesn't get cut off)
+                current.next = newContact; //connects new contact to current contact
             }//end if/else
+            size++;
         }//end addAtIndex
 
         //modify a contact (add scanner)
         //need to modify the next reference of node BEFORE the place you want to change
         //delete element and add back in new element at index?
-        //need to use doubly linked list to modify
         public void modify(int index) {
-            //List contacts with index #s by them
-            //System.out.println("Which contact would you like to modify?"); in user menu
-            //special case for if contact you want to change is head (index 0)
             Contact newContact = new Contact("Modify","206-546-8900", "2650 Nowhere St", "Bellingham");
-            //add contact to head currently
-            if (index == 0) {
-                newContact.next = head;
-            } else {
-                Contact current = head;
-            //go through linked list to spot two before index
-            for (int i = 0; i < index - 1; i++) {
-                current = current.next;
-            } //end for loop
-            //changing the next reference for contact BEFORE one you want to change
-            newContact = current.next; //link new contact to rest of list after
-            current.next = newContact;
-            //get contact after
-            //newContact.next = get(index + 1);
-            }//end if/else
-            //now need to connect back to rest of list, currently cuts off at spot modified
-            //add back contacts after this index
-            //doubly vs singly linked list
-
-
+            //delete contact at index and add new contact from user input at same index
+            delete(index);
+            addAtIndex(index, newContact);
         }//end modify
 
         //delete a contact
@@ -137,6 +112,8 @@ public class aePhonebook {
                     System.out.println("View phonebook");
                 } case 3 -> { //modify a contact
                     System.out.println("Modify a contact");
+                    //List contacts with index #s by them
+                    //System.out.println("Which contact would you like to modify?");
                 } case 4 -> {//delete a contact
                     System.out.println("Delete a contact");
                 } case 5 -> {//quit

@@ -28,16 +28,6 @@ public class aePhonebookTest {
         myPhoneBook.addContact(p4);
 
         myPhoneBook.viewPhonebook();
-
-        //test add at beginning
-        Contact newContact = new Contact("Front", "00000", "1800 Where St", "Seattle");
-        myPhoneBook.addAtIndex(0, newContact);
-        System.out.println("Add at front");
-        Contact index3 = new Contact("Index3", null, null, null);
-        System.out.println("Add at index 3");
-        myPhoneBook.addAtIndex(3, index3);
-        myPhoneBook.viewPhonebook();
-
     }//end main
     
 }//end aePhonebookTest
