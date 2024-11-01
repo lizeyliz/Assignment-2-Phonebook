@@ -14,7 +14,6 @@ public class aePhonebook {
         //Create contact from user input
         public Contact createContact(Scanner scan) {
             Contact myContact = new Contact(null, null, null, null);
-            System.out.println("add contact (press enter)");//may remove later
             scan.nextLine();//consumes dangling newline char
             System.out.println("Enter name:");
             myContact.setName(scan.nextLine());
@@ -69,7 +68,7 @@ public class aePhonebook {
 
         //modify a contact (need to add user input
         public void modify(int index, Contact newContact) {
-            //delete contact at index and add new contact from user input at same index
+            //delete contact at index and add new contact at same index
             delete(index);
             addAtIndex(index, newContact);
         }//end modify
@@ -115,17 +114,24 @@ public class aePhonebook {
         //user menu
         public void userMenu(int userInt, Scanner scan) {
             switch (userInt) {
-                case 1 -> { //create a contact
+                case 1 -> { //add a contact
                     Contact newContact = createContact(scan);
                     addContact(newContact);
                 } case 2 -> { //view phonebook
                     viewPhonebook();
                 } case 3 -> { //modify a contact
-                    //view contacts with index number
+                    viewWithIndices(); //view contacts with index number
+                    System.out.println("Enter number of contact you would like to modify (integer from list above):");
+                    int changeInt = scan.nextInt();
+                    System.out.println("Enter new contact information:");
+                    Contact modified = createContact(scan);
+                    modify(changeInt, modified);
+                    System.out.println("Contact has been modified.");
                 } case 4 -> {//delete a contact
                     viewWithIndices();
                     System.out.println("Enter number of contact you would like to delete (integer from list above):");
                     int deleteIndex = scan.nextInt();
+                    //add try/catch here
                     delete(deleteIndex);
                     System.out.println("Deleted!");
                 } case 5 -> {//quit
@@ -136,7 +142,7 @@ public class aePhonebook {
             }//end switch/case
 
             //print options
-            System.out.println("1) Create a new contact");
+            System.out.println("1) Add a new contact");
             System.out.println("2) View phonebook");
             System.out.println("3) Modify a contact");
             System.out.println("4) Delete a contact");
