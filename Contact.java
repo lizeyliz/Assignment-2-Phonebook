@@ -1,14 +1,12 @@
 //see read me
 //object class
 //a single list note representing one contact in phonebook
-
 public class Contact {
    //instance variables
    private String name;
    private String phoneNum;
    private String address;
    private String city;
-
    //pointing to next node
    Contact next; //points to next node (or null)
    
@@ -21,6 +19,7 @@ public class Contact {
 
      this.next = null;//so we can add to end
  } //end constructor
+ 
    //getters and setters
    public String getName() {
         return name;

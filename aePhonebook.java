@@ -1,6 +1,6 @@
 //see readme
 //manager class: contains methods (LinkedList)
-import java.util.*;
+import java.util.Scanner;
 public class aePhonebook {
         Contact head; //will point to first contact
         int size = 0;
@@ -24,7 +24,6 @@ public class aePhonebook {
             myContact.setAddress(scan.nextLine());
             System.out.println("Enter city:");
             myContact.setCity(scan.next());
-
             System.out.println();
     
             return myContact;
@@ -58,8 +57,7 @@ public class aePhonebook {
                 for (int i = 0; i < index - 1; i++) {
                     current = current.next;
                 }//end for loop
-                newContact.next = current.next; //makes the next reference for new contact the reference for current contact 
-                //(so list doesn't get cut off)
+                newContact.next = current.next; //connects new contact to list after current
                 current.next = newContact; //connects new contact to current contact
             }//end if/else
             size++;
