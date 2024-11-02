@@ -73,7 +73,6 @@ public class aePhonebook {
         }//end modify
 
         //delete a contact
-        //from slide 50 linked list
         public void delete(int index) {
             if (index == 0) {//special case, removing first element
                 head = head.next; //next element is new head
@@ -148,7 +147,3 @@ public class aePhonebook {
             System.out.println("5) Quit");
         }//end userMenu
 }//end aePhonebook
-
-//To do:
-//add cases for incorrect user input (try/catch?)
-//sort list (extra credit)
