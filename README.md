@@ -1,12 +1,7 @@
 # Assignment-2-Phonebook
-
-Aliza Eaton
-CS 145 8am
-11/2/2024
-Assignment 2: Phonebook
 Purpose: Allow user to create phonebook, add, delete, and modify contacts.
 
-Sources:
+##Sources:
 Constructors: <https://www.w3schools.com/java/java_constructors.asp>
 Instance Variables: <https://www.geeksforgeeks.org/variables-in-java/>
 Java this keyword: <https://www.w3schools.com/java/ref_keyword_this.asp>
